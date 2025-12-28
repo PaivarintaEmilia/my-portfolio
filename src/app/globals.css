@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Pieni perus “look” linkeille ja selektioille */
+::selection {
+  background: rgba(99, 102, 241, 0.35);
+}
+
+/* Sivunvaihtoanimaatio */
+.page-transition {
+  animation: pageFadeUp 280ms ease-out both;
+}
+
+@keyframes pageFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
