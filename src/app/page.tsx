@@ -20,10 +20,10 @@ export default function HomePage() {
 
           <div className="mt-6 w-full max-w-2xl">
             <ContactLinks
-              email="emilia@example.com"
-              phone="+358000000000"
-              linkedinUrl="https://www.linkedin.com/in/your-profile"
-              githubUrl="https://github.com/your-github"
+              email="mariaemilia.paivarinta@gmail.com"
+              phone="+34722610406"
+              linkedinUrl="www.linkedin.com/in/emilia-päivärinta-8413a8152"
+              githubUrl="https://github.com/PaivarintaEmilia"
             />
           </div>
         </div>
