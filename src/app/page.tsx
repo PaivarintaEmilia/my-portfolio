@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ContactLinks from "@/components/ContactLinks";
 import SectionSplit from "@/components/SectionSplit";
 
@@ -9,13 +10,25 @@ export default function HomePage() {
       <section className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-10">
         <div className="flex flex-col items-center text-center">
           {/* Profile image placeholder */}
-          <div className="h-32 w-32 rounded-full border border-white/10 bg-gradient-to-br from-white/10 to-white/5" />
+          <div className="relative h-32 w-32 overflow-hidden rounded-full border border-white/10">
+            <Image
+              src="/images/profile.jpg"
+              alt="Emilia Päivärinta"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           <h1 className="mt-5 text-3xl font-semibold tracking-tight">
             Emilia Päivärinta
           </h1>
           <p className="mt-3 max-w-2xl text-zinc-300 leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            I’m a final-year Information & Communication Technology student returning to Finland 
+            after seven years abroad (Spain, Malta, and most recently Asia). During my studies I 
+            worked as a Technical Project Manager at a Finnish start-up, leading B2B website and e-commerce 
+            projects end-to-end in WordPress, where I learned a lot about clear communication, practical problem-solving, 
+            and shipping work that actually gets used. I’m now looking for an internship or junior role where I can grow fast, 
+            contribute to real projects, and keep that small “spark in the eye” even when the task list is long.
           </p>
 
           <div className="mt-6 w-full max-w-2xl">
@@ -42,13 +55,25 @@ export default function HomePage() {
       {/* Split sections */}
       <SectionSplit
         title="About me"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
+        text="I’ve spent the last seven years living abroad Spain, Malta, and currently Asia, and I’m excited 
+        to move back to Finland for good and start building my long-term career. I have a Bachelor of Business 
+        Administration background, and I’m now finishing my final year in ICT. I’m motivated by learning that 
+        turns into tangible results: building, improving, testing, and iterating until something works smoothly 
+        for real people. I also genuinely enjoy international environments and connecting with different kinds of 
+        people and new teams, new perspectives, and new challenges feel more energizing than intimidating."
         imageSide="left"
       />
 
       <SectionSplit
         title="How I work"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet."
+        text="I bring a mix of people skills and technical curiosity: from HR coordination and customer service 
+        to managing technical projects alongside my studies. As a Technical Project Manager, I collaborated with 
+        Finnish B2B clients from kickoff to delivery, translating goals into clear next steps, keeping communication 
+        simple and honest, and making sure details didn’t slip through the cracks. Technically, I built and developed 
+        WordPress websites and e-commerce stores, learned the foundations of web projects (structure, styling, content, 
+        and the “why did this suddenly break?” moments), and got comfortable taking responsibility for the full process. 
+        I’m quick to learn, calm with different personalities and cultures, and I’m the type who reads up on things 
+        after work because I actually want to understand them—not just get them done."
         imageSide="right"
       />
     </div>

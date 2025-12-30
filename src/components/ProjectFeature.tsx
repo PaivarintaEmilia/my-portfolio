@@ -1,8 +1,12 @@
+import Image from "next/image";
+
 type ProjectFeatureProps = {
   title: string;
   description: string;
   githubUrl: string;
   tools: string[];
+  imageSrc: string;
+  imageAlt: string;
 };
 
 export default function ProjectFeature({
@@ -10,15 +14,20 @@ export default function ProjectFeature({
   description,
   githubUrl,
   tools,
+  imageSrc,
+  imageAlt,
 }: ProjectFeatureProps) {
   return (
     <article className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8">
       <h2 className="text-xl font-semibold tracking-tight">{title}</h2>
 
-      <div className="mt-4 aspect-[16/9] w-full rounded-xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5">
-        <div className="flex h-full items-center justify-center text-sm text-zinc-300">
-          Project image placeholder
-        </div>
+      <div className="mt-4 aspect-[16/9] w-full relative overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5">
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            fill
+            className="object-cover object-top"
+          />
       </div>
 
       <p className="mt-4 leading-7 text-zinc-300">{description}</p>

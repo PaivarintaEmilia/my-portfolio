@@ -1,22 +1,31 @@
+import Image from "next/image";
+
 type WebsiteCardProps = {
   title: string;
   description: string;
   websiteUrl: string;
+  imageSrc: string;
+  imageAlt: string;
 };
 
 export default function WebsiteCard({
   title,
   description,
   websiteUrl,
+  imageSrc,
+  imageAlt,
 }: WebsiteCardProps) {
+
   return (
     <article className="rounded-2xl border border-white/10 bg-white/5 p-6">
       <h2 className="text-lg font-semibold tracking-tight">{title}</h2>
-
-      <div className="mt-4 aspect-[16/9] w-full rounded-xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5">
-        <div className="flex h-full items-center justify-center text-sm text-zinc-300">
-          Website image placeholder
-        </div>
+      <div className="mt-4 aspect-[16/9] w-full relative overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5">
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          className="object-cover object-top"
+        />
       </div>
 
       <p className="mt-4 text-zinc-300 leading-7">{description}</p>
@@ -30,5 +39,6 @@ export default function WebsiteCard({
         Open website →
       </a>
     </article>
+
   );
 }
