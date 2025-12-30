@@ -35,7 +35,7 @@ export default function HomePage() {
             <ContactLinks
               email="mariaemilia.paivarinta@gmail.com"
               phone="+34722610406"
-              linkedinUrl="www.linkedin.com/in/emilia-päivärinta-8413a8152"
+              linkedinUrl="https://linkedin.com/in/emilia-päivärinta-8413a8152"
               githubUrl="https://github.com/PaivarintaEmilia"
             />
           </div>
