@@ -1,13 +1,19 @@
+import Image from "next/image";
+
 type SectionSplitProps = {
   title: string;
   text: string;
   imageSide?: "left" | "right";
+  imageSrc: string;
+  imageAlt: string;
 };
 
 export default function SectionSplit({
   title,
   text,
   imageSide = "left",
+  imageSrc,
+  imageAlt,
 }: SectionSplitProps) {
   const isLeft = imageSide === "left";
 
@@ -21,10 +27,13 @@ export default function SectionSplit({
       >
         {/* Image placeholder */}
         <div className="w-full md:w-1/2">
-          <div className="aspect-[4/3] w-full rounded-xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5">
-            <div className="flex h-full items-center justify-center text-sm text-zinc-300">
-              Image placeholder
-            </div>
+          <div className="aspect-[4/3] w-full relative rounded-xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              fill
+              className="object-cover object-middle"
+            />
           </div>
         </div>
 

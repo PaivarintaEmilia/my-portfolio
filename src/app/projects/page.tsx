@@ -9,7 +9,9 @@ export default function ProjectsPage() {
       <section className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-10">
         <h1 className="text-3xl font-semibold tracking-tight">My projects</h1>
         <p className="mt-3 max-w-3xl text-zinc-300 leading-7">
-          Here are some projects from my studies. The API project was built for school, and the Expense Tracker is a personal project to showcase my skills. The websites and e-commerce stores were created during my time as a Technical Project Manager at a Finnish startup alongside my studies.
+          Here are some projects of mine. The API project was built for school, and the Expense Tracker is a personal project 
+          to showcase my skills. The websites and e-commerce stores were created during my time as a Technical Project Manager 
+          at a Finnish startup alongside my studies.
         </p>
       </section>
 
@@ -79,7 +81,7 @@ export default function ProjectsPage() {
           <ContactLinks
             email="mariaemilia.paivarinta@gmail.com"
             phone="+34722610406"
-            linkedinUrl="www.linkedin.com/in/emilia-päivärinta-8413a8152"
+            linkedinUrl="https://linkedin.com/in/emilia-päivärinta-8413a8152"
             githubUrl="https://github.com/PaivarintaEmilia"
             compact
           />

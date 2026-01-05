@@ -23,11 +23,11 @@ export default function HomePage() {
             Emilia Päivärinta
           </h1>
           <p className="mt-3 max-w-2xl text-zinc-300 leading-7">
-            I’m a final-year Information & Communication Technology student returning to Finland 
-            after seven years abroad (Spain, Malta, and most recently Asia). During my studies I 
-            worked as a Technical Project Manager at a Finnish start-up, leading B2B website and e-commerce 
-            projects end-to-end in WordPress, where I learned a lot about clear communication, practical problem-solving, 
-            and shipping work that actually gets used. I’m now looking for an internship or junior role where I can grow fast, 
+            I’m a final-year Information & Communication Technology student returning to Finland
+            after seven years abroad (Spain, Malta, and most recently Asia) in February 2026. During my studies I
+            worked as a Technical Project Manager at a Finnish start-up, leading B2B website and e-commerce
+            projects end-to-end in WordPress, where I learned a lot about clear communication, practical problem-solving,
+            and shipping work that actually gets used. I’m now looking for an internship or junior role where I can grow fast,
             contribute to real projects, and keep that small “spark in the eye” even when the task list is long.
           </p>
 
@@ -56,25 +56,28 @@ export default function HomePage() {
       <SectionSplit
         title="About me"
         text="I’ve spent the last seven years living abroad Spain, Malta, and currently Asia, and I’m excited 
-        to move back to Finland for good and start building my long-term career. I have a Bachelor of Business 
-        Administration background, and I’m now finishing my final year in ICT. I’m motivated by learning that 
-        turns into tangible results: building, improving, testing, and iterating until something works smoothly 
-        for real people. I also genuinely enjoy international environments and connecting with different kinds of 
+        to move back to Finland for good in February 2026 and start building my long-term career. I have a Bachelor of Business 
+        Administration background, and I’m now finishing my final year in ICT. I enjoy learning new things, so 
+        returning to my studies has been mostly inspiring and rewarding. In my free time, I unwind by reading 
+        and working out. I also genuinely enjoy international environments and connecting with different kinds of 
         people and new teams, new perspectives, and new challenges feel more energizing than intimidating."
         imageSide="left"
+        imageSrc="/images/diving-photo.jpeg"
+        imageAlt="Image of me divining in Malta."
       />
 
       <SectionSplit
         title="How I work"
         text="I bring a mix of people skills and technical curiosity: from HR coordination and customer service 
         to managing technical projects alongside my studies. As a Technical Project Manager, I collaborated with 
-        Finnish B2B clients from kickoff to delivery, translating goals into clear next steps, keeping communication 
-        simple and honest, and making sure details didn’t slip through the cracks. Technically, I built and developed 
-        WordPress websites and e-commerce stores, learned the foundations of web projects (structure, styling, content, 
-        and the “why did this suddenly break?” moments), and got comfortable taking responsibility for the full process. 
-        I’m quick to learn, calm with different personalities and cultures, and I’m the type who reads up on things 
-        after work because I actually want to understand them—not just get them done."
+        Finnish B2B clients from kickoff to delivery, translating goals into clear next steps and keeping communication 
+        simple and honest. Technically, I built and developed WordPress websites and e-commerce stores, learned the 
+        foundations of web projects (structure, styling, content, and the “why did this suddenly break?” moments), 
+        and got comfortable taking responsibility for the full process. I’m quick to learn, calm with different 
+        personalities and cultures."
         imageSide="right"
+        imageSrc="/images/diving-photo.jpeg"
+        imageAlt=""
       />
     </div>
   );
