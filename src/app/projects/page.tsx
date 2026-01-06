@@ -73,8 +73,7 @@ export default function ProjectsPage() {
       <section className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-10">
         <h2 className="text-2xl font-semibold tracking-tight">Let’s work together</h2>
         <p className="mt-3 max-w-3xl text-zinc-300 leading-7">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reach out and
-          let’s talk about opportunities.
+          Reach out and let’s talk about opportunities.
         </p>
 
         <div className="mt-6">
