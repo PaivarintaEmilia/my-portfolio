@@ -62,8 +62,8 @@ export default function HomePage() {
         and working out. I also genuinely enjoy international environments and connecting with different kinds of 
         people and new teams, new perspectives, and new challenges feel more energizing than intimidating."
         imageSide="left"
-        imageSrc="/images/diving-photo.jpeg"
-        imageAlt="Image of me divining in Malta."
+        imageSrc="/images/singapure.jpg"
+        imageAlt="Image of me in Singapure."
       />
 
       <SectionSplit

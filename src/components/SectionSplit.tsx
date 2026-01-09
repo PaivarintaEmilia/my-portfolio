@@ -32,7 +32,7 @@ export default function SectionSplit({
               src={imageSrc}
               alt={imageAlt}
               fill
-              className="object-cover object-middle"
+              className="object-cover object-middle rounded-xl"
             />
           </div>
         </div>

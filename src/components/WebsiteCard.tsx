@@ -6,6 +6,7 @@ type WebsiteCardProps = {
   websiteUrl: string;
   imageSrc: string;
   imageAlt: string;
+  tools: string[];
 };
 
 export default function WebsiteCard({
@@ -14,6 +15,7 @@ export default function WebsiteCard({
   websiteUrl,
   imageSrc,
   imageAlt,
+  tools,
 }: WebsiteCardProps) {
 
   return (
@@ -38,7 +40,22 @@ export default function WebsiteCard({
       >
         Open website →
       </a>
+
+      <div className="mt-6">
+        <h3 className="text-sm font-semibold text-zinc-200">Highlights</h3>
+        <ul className="mt-3 flex flex-wrap gap-2">
+          {tools.map((t) => (
+            <li
+              key={t}
+              className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-200"
+            >
+              {t}
+            </li>
+          ))}
+        </ul>
+      </div>
     </article>
+
 
   );
 }

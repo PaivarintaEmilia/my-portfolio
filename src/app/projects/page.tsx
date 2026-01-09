@@ -47,25 +47,29 @@ export default function ProjectsPage() {
             description="I created an AA-level accessible website for Samae Oy, an expert in diversity and inclusion. The site is designed to reflect the entrepreneur's brand identity and includes features such as adjustable text size, high contrast mode, and readable fonts to ensure inclusivity for all users. The content is organized to guide visitors through the company's services and philosophy effectively."
             websiteUrl="https://samae.fi/"
             imageSrc={"/images/samae-fi.png"}
-            imageAlt={"Landing page of Samae website"} />
+            imageAlt={"Landing page of Samae website"} 
+            tools={["Wordpress", "Elementor", "Mobile optimization", "Level AA accessibility", "Design"]} />
           <WebsiteCard
             title="e-Commerce | Acoustic Store"
             description="For a company selling acoustic products, I developed a modern and aesthetically pleasing e-commerce platform utilizing WooCommerce. The site offers a seamless shopping experience with clear categorization of products such as wall panels, ceiling solutions, and acoustic lighting. High-quality images and detailed product descriptions assist customers in making informed purchasing decisions."
             websiteUrl="https://akustiikkakauppa.fi/"
             imageSrc={"/images/akustiikkakauppa-fi.png"}
-            imageAlt={"Landing page of Acoustic e-commerce."} />
+            imageAlt={"Landing page of Acoustic e-commerce."} 
+            tools={["Wordpress", "WooCommerce", "Elementor", "Mobile optimization", "Level AA accessibility", "Design"]} />
           <WebsiteCard
             title="e-Commerce | Natural Beauty"
             description="For Juhlatalo Ukko Hjalmar, a venue offering rustic romantic settings for various events and accommodations, I developed a website that showcases their services and facilities. The site includes a small e-commerce section implemented with WooCommerce, allowing customers to purchase the company's products online. The design reflects the warm and inviting atmosphere of the venue."
             websiteUrl="https://ukkohjalmar.fi/"
             imageSrc={"/images/ukkohjalmar-fi.png"}
-            imageAlt={"Landing page of Natural Beauty e-commerce."} />
+            imageAlt={"Landing page of Natural Beauty e-commerce."} 
+            tools={["Wordpress", "WooCommerce", "Elementor", "Mobile optimization", "Design"]} />
           <WebsiteCard
             title="Website | Construction machines"
             description="For JMT Machinery, a company specializing in the import and sale of earthmoving machinery, I developed a responsive website using the Elementor tool. The site is optimized for various devices and includes dynamic features to enhance user engagement. The design emphasizes the company's reliability and expertise in providing high-quality machinery and related services."
             websiteUrl="https://jmtmachinery.fi/"
             imageSrc={"/images/jmtmachinery-fi.png"}
-            imageAlt={"Landing page of the construction machine website"} />
+            imageAlt={"Landing page of the construction machine website"} 
+            tools={["Wordpress", "Elementor", "Mobile optimization", "Dynamic features"]} />
         </div>
       </section>
 
